@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import { MenuData } from "./MenuData";
+
 export const Navbar = () => {
   return (
     <nav className="navbar">
@@ -17,10 +19,10 @@ export const Navbar = () => {
         {MenuData.map((menu, index) => {
           return (
             <li key={index}>
-              <a href={menu.url} className={menu.cName}>
+              <Link to={menu.url} className={menu.cName}>
                 <i className={menu.icon} style={{ paddingRight: "10px" }}></i>
                 {menu.title}
-              </a>
+              </Link>
             </li>
           );
         })}

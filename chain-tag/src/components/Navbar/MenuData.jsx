@@ -1,20 +1,20 @@
 export const MenuData = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     cName: "nav-links",
     icon: "fa-solid fa-house",
   },
   {
     title: "Blog",
-    url: "#",
+    url: "/blog",
     cName: "nav-links",
     icon: "fa-solid fa-pen",
   },
 
   {
     title: "Design",
-    url: "#",
+    url: "/design",
     cName: "nav-links",
     icon: "fa-solid fa-pen-ruler",
   },

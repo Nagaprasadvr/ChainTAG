@@ -1,6 +1,9 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar.component";
-import { InputForm } from "./components/InputForm/InputForm";
+import { Home } from "./components/Home/Home";
+import { DesignPage } from "./components/DesignPage/DesignPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Design from "./components/DesignPage/DesignPage";
 
 require("bootstrap/dist/css/bootstrap.min.css");
 
@@ -10,18 +13,11 @@ function App() {
       <div style={{ height: "150px" }}>
         <Navbar />
       </div>
-      <div className="App">
-        <h1 className="w3-animate-opacity">
-          <b>Create your Digital identity on Solana chain!</b>
-        </h1>
-        <div className="w3-animate-opacity w3-jumbo">
-          <i
-            className="fa fa-fingerprint"
-            style={{ color: "lightskyblue" }}
-          ></i>
-        </div>
-        <InputForm />
-      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/design" element={<Design />} />
+      </Routes>
     </div>
   );
 }
