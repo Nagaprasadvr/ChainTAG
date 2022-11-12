@@ -6,15 +6,17 @@ import { MenuData } from "./MenuData";
 export const Navbar = () => {
   return (
     <nav className="navbar">
-      <p className="logo">
+      <div>
         <div className="w3-animate-opacity">
-          <i
-            className="fa-solid fa-fingerprint"
-            style={{ color: "white", paddingRight: "15px" }}
-          ></i>
+          <p className="logo">
+            <i
+              className="fa-solid fa-fingerprint"
+              style={{ color: "white", paddingRight: "15px" }}
+            ></i>
+            ChainTAG
+          </p>
         </div>
-        ChainTAG
-      </p>
+      </div>
       <ul className="nav-menu">
         {MenuData.map((menu, index) => {
           return (
