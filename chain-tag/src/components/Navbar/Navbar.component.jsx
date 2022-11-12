@@ -5,7 +5,12 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <p className="logo">
-        <img src="./ChainTAG.png" alt="" width="60px" height="60px" />
+        <div className="w3-animate-opacity">
+          <i
+            className="fa-solid fa-fingerprint"
+            style={{ color: "white", paddingRight: "15px" }}
+          ></i>
+        </div>
         ChainTAG
       </p>
       <ul className="nav-menu">
@@ -13,7 +18,8 @@ export const Navbar = () => {
           return (
             <li key={index}>
               <a href={menu.url} className={menu.cName}>
-                <i className={menu.icon}></i> {menu.title}
+                <i className={menu.icon} style={{ paddingRight: "10px" }}></i>
+                {menu.title}
               </a>
             </li>
           );

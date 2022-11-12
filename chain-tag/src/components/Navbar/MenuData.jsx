@@ -3,24 +3,19 @@ export const MenuData = [
     title: "Home",
     url: "#",
     cName: "nav-links",
-    icon: "fa-solid fa-house-user",
+    icon: "fa-solid fa-house",
   },
   {
-    title: "About",
+    title: "Blog",
     url: "#",
     cName: "nav-links",
-    icon: "fa-solid fa-circle-info",
+    icon: "fa-solid fa-pen",
   },
-  {
-    title: "Product",
-    url: "#",
-    cName: "nav-links",
-    icon: "fa-solid fa-briefcase",
-  },
+
   {
     title: "Design",
     url: "#",
     cName: "nav-links",
-    icon: "fa-solid fa-address-book",
+    icon: "fa-solid fa-pen-ruler",
   },
 ];

@@ -1,14 +1,13 @@
 import { PopupButton } from "@typeform/embed-react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./InputForm.css";
 
 export const InputForm = () => {
   return (
-    <PopupButton
-      id="ZjowQHZV"
-      style={{ fontSize: 20 }}
-      className="btn btn-dark"
-    >
-      Create TAG
-    </PopupButton>
+    <div className="w3-animate-bottom">
+      <PopupButton id="ZjowQHZV" className="btn btn-dark inputButton">
+        Create TAG
+      </PopupButton>
+    </div>
   );
 };
