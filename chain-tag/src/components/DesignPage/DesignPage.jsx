@@ -7,13 +7,15 @@ export const DesignPage = () => {
     <div className="App">
       <iframe
         title="chain-tag"
-        width="1500px"
-        height="600px"
-        src="https://miro.com/app/live-embed/uXjVPEyIqc0=/?moveToViewport=-2919,-1530,1909,1029&embedId=954208500843"
+        width="1000px"
+        height="600"
+        src="https://miro.com/app/live-embed/uXjVPEyIqc0=/?moveToViewport=-3142,-1542,2300,1087&embedId=50722394489"
         frameborder="0"
         scrolling="no"
-        allowfullscreen="yes"
+        allowfullscreen
       ></iframe>
+      <br></br>
+      <br></br>
     </div>
   );
 };
