@@ -1,4 +1,5 @@
 import { PopupButton } from "@typeform/embed-react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./InputForm.css";
 
